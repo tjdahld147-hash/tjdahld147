@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [{
+    "source": "/.well-known/appspecific/(.*)",
+    "headers": [
+      {"key": "Content-Type", "value": "application/x-pem-file"},
+      {"key": "Access-Control-Allow-Origin", "value": "*"}
+    ]
+  }]
+}
